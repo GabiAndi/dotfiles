@@ -1,0 +1,8 @@
+~/.screenlayout/casa.sh
+setxkbmap latam &
+nm-applet &
+udiskie -t &
+volumeicon &
+optimus-manager-qt &
+psensor &
+picom &

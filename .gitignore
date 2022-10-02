@@ -1,0 +1,18 @@
+# Ignorar todo
+/*
+!.gitignore
+
+# Excepto los archivos de este repositorio
+!LICENCE
+!README.md
+
+!.gabi_config
+!.config
+
+!.baserc
+!.bashrc
+!.zshrc
+!.p10k.zsh
+!.gitconfig
+!.tmux.conf
+!.xprofile

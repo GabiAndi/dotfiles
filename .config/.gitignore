@@ -1,0 +1,12 @@
+# Ignorar todo
+/*
+!.gitignore
+
+# Excepto los archivos de este repositorio
+!alacritty
+!Code
+!htop
+!nvim
+!rofi
+!qtile
+!neofetch

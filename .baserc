@@ -1,0 +1,21 @@
+############################ Carpetas al PATH ############################
+if [ -d "$HOME/.local/bin" ]; then
+    export PATH="$HOME/.local/bin:$PATH"
+fi
+
+if [ -d "$HOME/Programas/bin" ]; then
+    export PATH="$HOME/Programas/bin:$PATH"
+fi
+##########################################################################
+
+################################## Alias #################################
+# Sistema
+alias cat='bat --style=plain --paging=never'
+alias ls='exa --group-directories-first'
+alias tree='exa -T'
+alias grep='grep --color=auto'
+
+# Llaves
+alias pass-active-flexar="export PASSWORD_STORE_DIR=$HOME/.password-store-flexar"
+alias pass-active-$USER="export PASSWORD_STORE_DIR=$HOME/.password-store"
+##########################################################################

@@ -1,0 +1,21 @@
+[user]
+    name = Gabriel Andrés Aguirre
+    email = gabiandiagui@gmail.com
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    grep = auto
+[alias]
+    st = status
+    ci = commit
+    co = checkout
+    br = branch
+    unstage = reset HEAD --
+    last = log -20 --graph --name-status HEAD
+[branch]
+    autosetuprebase = always
+[init]
+    defaultBranch = main
+[core]
+    editor = nano
