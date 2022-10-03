@@ -16,6 +16,7 @@ def icon(icon, foreground, background, icon_size=icon_size, padding=4):
     return widget.TextBox(
         foreground=foreground,
         background=background,
+        font=font_family,
         fontsize=icon_size,
         text=icon,
         padding=padding
@@ -27,7 +28,8 @@ def powerline(foreground, background, icon=""):
         foreground=foreground,
         background=background,
         text=icon,
-        fontsize=36,
+        font=font_family,
+        fontsize=38,
         padding=-2,
     )
 
@@ -67,6 +69,7 @@ def workspaces(foreground, background):
         widget.WindowName(
             foreground=theme["focus"],
             background=background,
+            font=font_family,
             fontsize=font_size,
             padding=6
         ),
@@ -87,6 +90,7 @@ def systray(foreground, background):
         widget.Systray(
             foreground=foreground,
             background=background,
+            icon_size=icon_size,
             padding=6
         ),
         separator(
@@ -115,7 +119,8 @@ def control(color, color_end, color_font):
         widget.PulseVolume(
             foreground=color_font,
             background=color,
-            font=font_family
+            font=font_family,
+            fontsize=font_size
         ),
         separator(
             foreground=color,
@@ -133,13 +138,69 @@ def control(color, color_end, color_font):
         widget.Backlight(
             foreground=color_font,
             background=color,
-            font=font_family,
             backlight_name="intel_backlight",
+            font=font_family,
+            fontsize=font_size
         ),
         separator(
             foreground=color,
             background=color
         ),
+        #icon(
+        #    icon="",
+        #    foreground=color_font,
+        #    background=color
+        #),
+        #separator(
+        #    foreground=color,
+        #    background=color
+        #),
+        #widget.Battery(
+        #    foreground=color_font,
+        #    background=color,
+        #    low_foreground=theme["focus"],
+        #    font=font_family,
+        #    fontsize=font_size,
+        #    format="{char} {percent:2.0%}",
+        #    notify_below=True
+        #),
+        #separator(
+        #    foreground=color,
+        #    background=color
+        #),
+    ]
+    
+
+def usage(color, color_end, color_font):
+    return [
+        powerline(
+            foreground=color,
+            background=color_end
+        ),
+        widget.CPU(
+            foreground=color_font,
+            background=color,
+            font=font_family,
+            fontsize=font_size,
+            format="CPU: {load_percent}%",
+            update_interval=3.0
+        ),
+        separator(
+            foreground=color,
+            background=color
+        ),
+        widget.Memory(
+            foreground=color_font,
+            background=color,
+            font=font_family,
+            fontsize=font_size,
+            format="MEM: {MemUsed:.0f}{mm}/{MemTotal:.0f}{mm}",
+            update_interval=3.0
+        ),
+        separator(
+            foreground=color,
+            background=color
+        )
     ]
 
 
@@ -160,6 +221,8 @@ def update(color, color_end, color_font):
         widget.CheckUpdates(
             foreground=color_font,
             background=color,
+            font=font_family,
+            fontsize=font_size,
             colour_have_updates=theme["text"],
             colour_no_updates=theme["text"],
             no_update_string="0",
@@ -184,10 +247,14 @@ def layout(color, color_end, color_font):
             foreground=color_font,
             background=color,
             scale=0.5,
+            font=font_family,
+            fontsize=icon_size
         ),
         widget.CurrentLayout(
             foreground=color_font,
             background=color,
+            font=font_family,
+            fontsize=font_size,
             padding=4
         ),
         separator(
@@ -214,6 +281,8 @@ def clock(color, color_end, color_font):
         widget.Clock(
             foreground=color_font,
             background=color,
+            font=font_family,
+            fontsize=font_size,
             format="%d/%m/%Y - %H:%M:%S"
         ),
         separator(
@@ -233,8 +302,13 @@ primary_widgets = [
         background=theme["dark"]
     ),
     *control(
-        color=theme["color4"],
+        color=theme["color5"],
         color_end=theme["dark"],
+        color_font=theme["text"]
+    ),
+    *usage(
+        color=theme["color4"],
+        color_end=theme["color5"],
         color_font=theme["text"]
     ),
     *update(

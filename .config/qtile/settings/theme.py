@@ -11,4 +11,5 @@ theme_red = {
     "color2": "#a77ac4",
     "color3": "#7197e7",
     "color4": "#ffb86c",
+    "color5": "#32bf84",
 }
