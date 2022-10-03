@@ -24,9 +24,14 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     
     # Acciones
     ([mod], "Tab", lazy.next_layout()),
+    ([mod, "shift"], "Tab", lazy.prev_layout()),
+    
     ([mod], "w", lazy.window.kill()),
+    
     ([mod, "control"], "r", lazy.reload_config()),
     ([mod, "control"], "q", lazy.shutdown()),
+    
+    ([mod], "r", lazy.spawncmd()),
     ###############################################################
     
     ########################## Acciones ###########################
@@ -38,6 +43,10 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     # Brillo
     ([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +10%")),
     ([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 10%-")),
+    
+    # Screenshot
+    ([mod], "s", lazy.spawn("scrot")),
+    ([mod, "shift"], "s", lazy.spawn("scrot -s")),
     ###############################################################
     
     ######################## Aplicaciones #########################

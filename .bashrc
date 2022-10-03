@@ -8,4 +8,4 @@
 PS1='[\u@\h \W]\$ '
 
 # Configuración base
-source .baserc
+source $HOME/.baserc

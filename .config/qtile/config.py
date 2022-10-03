@@ -1,23 +1,13 @@
-# Importaciones
-import subprocess
-
-from os import path
-from libqtile import hook
-
 # Configuraciones
-from settings.keys import keys
 from settings.groups import groups
+from settings.keys import keys
 from settings.layouts import layouts
-from settings.screens import screens
 from settings.mouse import mouse
+from settings.screens import screens
 from settings.widgets import widget_defaults, extension_defaults
-from settings.path import qtile_path
 
 
-@hook.subscribe.startup_once
-def autostart():
-    subprocess.call([path.join(qtile_path, 'autostart.sh')])
-
+# Variables extra
 main = None
 dgroups_key_binder = None
 dgroups_app_rules = []

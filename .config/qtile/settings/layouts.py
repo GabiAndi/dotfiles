@@ -1,26 +1,30 @@
 from libqtile import layout
 from libqtile.config import Match
 
+from .config import theme
+
+
+layout_conf = {
+    "border_focus": theme["focus"],
+    "border_width": 2,
+    "margin": 4,
+}
 
 layouts = [
-    layout.MonadTall(
-        border_focus="#d75f5f",
-        border_normal="#522121",
-        border_width=2,
-        margin=4,
-    ),
-    layout.Max(),
+    layout.MonadTall(**layout_conf),
+    layout.MonadWide(**layout_conf),
+    layout.Max(**layout_conf),
 ]
 
 floating_layout = layout.Floating(
     float_rules=[
-        # Run the utility of `xprop` to see the wm class and name of an X client.
         *layout.Floating.default_float_rules,
-        Match(wm_class="confirmreset"),  # gitk
-        Match(wm_class="makebranch"),  # gitk
-        Match(wm_class="maketag"),  # gitk
-        Match(wm_class="ssh-askpass"),  # ssh-askpass
-        Match(title="branchdialog"),  # gitk
-        Match(title="pinentry"),  # GPG key password entry
-    ]
+        Match(wm_class="confirmreset"),
+        Match(wm_class="makebranch"),
+        Match(wm_class="maketag"),
+        Match(wm_class="ssh-askpass"),
+        Match(title="branchdialog"),
+        Match(title="pinentry"),
+    ],
+    border_focus=theme["focus"]
 )
