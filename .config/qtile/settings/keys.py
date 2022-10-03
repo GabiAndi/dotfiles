@@ -51,8 +51,8 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     
     ######################## Aplicaciones #########################
     # Menu
-    ([mod], "m", lazy.spawn("rofi -show run")),
-    ([mod, "shift"], "m", lazy.spawn("rofi -show")),
+    ([mod], "m", lazy.spawn("rofi -show drun")),
+    ([mod, "shift"], "m", lazy.spawn("rofi -show window")),
     
     # Aplicaciones
     ([mod], "Return", lazy.spawn(terminal)),
