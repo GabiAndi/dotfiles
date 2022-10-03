@@ -5,7 +5,9 @@ from libqtile.config import Screen
 from libqtile.log_utils import logger
 
 from .widgets import primary_widgets, secondary_widgets
-from .config import status_bar_size, status_bar_opacity
+from .config import (status_bar_size, status_bar_opacity,
+                     primary_wallpaper_file, primary_wallpaper_mode,
+                     secondary_wallpaper_file, secondary_wallpaper_mode)
 from .path import qtile_path
 
 
@@ -13,11 +15,17 @@ def status_bar(widgets):
     return bar.Bar(widgets, status_bar_size, opacity=status_bar_opacity)
 
 
+def wallpaper(wallpaper_file, wallpaper_mode):
+    return {
+        "wallpaper": qtile_path + "/" + wallpaper_file,
+        "wallpaper_mode": wallpaper_mode
+    }
+
+
 screens = [
     Screen(
         top=status_bar(primary_widgets),
-        wallpaper=qtile_path + "/wallpaper.jpg",
-        wallpaper_mode="fill"
+        **wallpaper(primary_wallpaper_file, primary_wallpaper_mode)
     )
 ]
 
@@ -41,6 +49,5 @@ if connected_monitors > 1:
     for _ in range(1, connected_monitors):
         screens.append(Screen(
             top=status_bar(secondary_widgets),
-            wallpaper=qtile_path + "/wallpaper.jpg",
-            wallpaper_mode="fill"
+            **wallpaper(secondary_wallpaper_file, secondary_wallpaper_mode)
         ))

@@ -7,6 +7,14 @@ mod = "mod4"
 # Tema
 theme = theme_red
 
+# Fondo de pantalla de monitor principal
+primary_wallpaper_file = "wallpaper.jpg"
+primary_wallpaper_mode = "fill"
+
+# Fondo de pantalla de monitores secundarios
+secondary_wallpaper_file = "wallpaper.jpg"
+secondary_wallpaper_mode = "fill"
+
 # Barra
 status_bar_size = 30
 status_bar_opacity = 1.0

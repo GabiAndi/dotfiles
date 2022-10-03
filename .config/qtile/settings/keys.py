@@ -41,8 +41,8 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([], "XF86AudioMute", lazy.spawn("pamixer --toggle-mute")),
     
     # Brillo
-    ([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +10%")),
-    ([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 10%-")),
+    ([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +5%")),
+    ([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 5%-")),
     
     # Screenshot
     ([mod], "s", lazy.spawn("scrot")),
