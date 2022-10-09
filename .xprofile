@@ -1,4 +1,4 @@
-~/.screenlayout/casa.sh
+~/.screenlayout/default.sh
 setxkbmap latam &
 nm-applet &
 udiskie -t &

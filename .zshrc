@@ -30,3 +30,9 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Configuración base
 source $HOME/.baserc
+
+# Plugins
+plugins=(
+  git
+  pass
+)
