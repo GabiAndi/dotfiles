@@ -26,5 +26,5 @@ icon_size = 22
 
 # Aplicaciones
 terminal = "alacritty"
-web_browser = "google-chrome-stable"
+web_browser = "firefox"
 file_explorer = "thunar"

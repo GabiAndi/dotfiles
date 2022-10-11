@@ -2,10 +2,6 @@
 if [ -d "$HOME/.local/bin" ]; then
     export PATH="$HOME/.local/bin:$PATH"
 fi
-
-if [ -d "$HOME/Programas/bin" ]; then
-    export PATH="$HOME/Programas/bin:$PATH"
-fi
 ##########################################################################
 
 ################################## Alias #################################
