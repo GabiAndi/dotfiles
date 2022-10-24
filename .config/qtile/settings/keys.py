@@ -33,6 +33,7 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([mod], "w", lazy.window.kill()),
 
     ([mod, "control"], "r", lazy.reload_config()),
+    ([mod, "shift"], "r", lazy.spawn("reboot")),
     ([mod, "control"], "q", lazy.shutdown()),
     ([mod, "shift"], "q", lazy.spawn("poweroff")),
 
