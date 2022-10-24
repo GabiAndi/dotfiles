@@ -12,6 +12,10 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([mod], "j", lazy.layout.down()),
     ([mod], "k", lazy.layout.up()),
 
+    # Cambiar foco de pantallas
+    ([mod], "i", lazy.prev_screen()),
+    ([mod], "o", lazy.next_screen()),
+
     # Mover ventanas en el grupo
     ([mod, "shift"], "h", lazy.layout.shuffle_left()),
     ([mod, "shift"], "l", lazy.layout.shuffle_right()),
