@@ -146,30 +146,30 @@ def control(color, color_end, color_font):
             foreground=color,
             background=color
         ),
-        #icon(
-        #    icon="",
-        #    foreground=color_font,
-        #    background=color
-        #),
-        #separator(
-        #    foreground=color,
-        #    background=color
-        #),
-        #widget.Battery(
-        #    foreground=color_font,
-        #    background=color,
-        #    low_foreground=theme["focus"],
-        #    font=font_family,
-        #    fontsize=font_size,
-        #    format="{char} {percent:2.0%}",
-        #    notify_below=True
-        #),
-        #separator(
-        #    foreground=color,
-        #    background=color
-        #),
+        # icon(
+        #     icon="",
+        #     foreground=color_font,
+        #     background=color
+        # ),
+        # separator(
+        #     foreground=color,
+        #     background=color
+        # ),
+        # widget.Battery(
+        #     foreground=color_font,
+        #     background=color,
+        #     low_foreground=theme["focus"],
+        #     font=font_family,
+        #     fontsize=font_size,
+        #     format="{char} {percent:2.0%}",
+        #     notify_below=True
+        # ),
+        # separator(
+        #     foreground=color,
+        #     background=color
+        # ),
     ]
-    
+
 
 def usage(color, color_end, color_font):
     return [
@@ -210,7 +210,8 @@ def update(color, color_end, color_font):
             foreground=color,
             background=color_end
         ),
-        icon(icon="",
+        icon(
+            icon="",
             foreground=color_font,
             background=color
         ),
@@ -270,7 +271,8 @@ def clock(color, color_end, color_font):
             foreground=color,
             background=color_end
         ),
-        icon(icon="",
+        icon(
+            icon="",
             foreground=color_font,
             background=color
         ),
