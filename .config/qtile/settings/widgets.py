@@ -9,6 +9,8 @@ from libqtile.widget.memory import Memory
 from libqtile.widget.check_updates import CheckUpdates
 from libqtile.widget.currentlayout import CurrentLayoutIcon, CurrentLayout
 from libqtile.widget.clock import Clock
+# from libqtile.widget.battery import Battery
+# from libqtile.widget.backlight import Backlight
 
 from .config import font_family, font_size, icon_size, theme
 
@@ -145,7 +147,7 @@ def control(color, color_end, color_font):
         #     foreground=color,
         #     background=color
         # ),
-        # widget.Backlight(
+        # Backlight(
         #     foreground=color_font,
         #     background=color,
         #     backlight_name="intel_backlight",
@@ -165,7 +167,7 @@ def control(color, color_end, color_font):
         #     foreground=color,
         #     background=color
         # ),
-        # widget.Battery(
+        # Battery(
         #     foreground=color_font,
         #     background=color,
         #     low_foreground=theme["focus"],
