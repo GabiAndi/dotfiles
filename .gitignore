@@ -6,7 +6,6 @@
 !LICENCE
 !README.md
 
-!.gabi_config
 !.config
 
 !.baserc
@@ -16,4 +15,3 @@
 !.gitconfig
 !.tmux.conf
 !.xprofile
-!.screenlayout
