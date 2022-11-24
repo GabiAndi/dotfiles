@@ -1,10 +1,20 @@
-from libqtile import widget
+from libqtile.widget.sep import Sep
+from libqtile.widget.textbox import TextBox
+from libqtile.widget.groupbox import GroupBox
+from libqtile.widget.windowname import WindowName
+from libqtile.widget.systray import Systray
+from libqtile.widget.pulse_volume import PulseVolume
+from libqtile.widget.cpu import CPU
+from libqtile.widget.memory import Memory
+from libqtile.widget.check_updates import CheckUpdates
+from libqtile.widget.currentlayout import CurrentLayoutIcon, CurrentLayout
+from libqtile.widget.clock import Clock
 
 from .config import font_family, font_size, icon_size, theme
 
 
 def separator(foreground, background, padding=6):
-    return widget.Sep(
+    return Sep(
         foreground=foreground,
         background=background,
         padding=padding,
@@ -13,7 +23,7 @@ def separator(foreground, background, padding=6):
 
 
 def icon(icon, foreground, background, icon_size=icon_size, padding=4):
-    return widget.TextBox(
+    return TextBox(
         foreground=foreground,
         background=background,
         font=font_family,
@@ -24,7 +34,7 @@ def icon(icon, foreground, background, icon_size=icon_size, padding=4):
 
 
 def powerline(foreground, background, icon=""):
-    return widget.TextBox(
+    return TextBox(
         foreground=foreground,
         background=background,
         text=icon,
@@ -40,7 +50,7 @@ def workspaces(foreground, background):
             foreground=foreground,
             background=background
         ),
-        widget.GroupBox(
+        GroupBox(
             foreground=foreground,
             background=background,
             active=theme["active"],
@@ -66,7 +76,7 @@ def workspaces(foreground, background):
             foreground=foreground,
             background=background
         ),
-        widget.WindowName(
+        WindowName(
             foreground=theme["focus"],
             background=background,
             font=font_family,
@@ -87,7 +97,7 @@ def systray(foreground, background):
             background=background,
             padding=14
         ),
-        widget.Systray(
+        Systray(
             foreground=foreground,
             background=background,
             icon_size=icon_size,
@@ -116,7 +126,7 @@ def control(color, color_end, color_font):
             foreground=color,
             background=color
         ),
-        widget.PulseVolume(
+        PulseVolume(
             foreground=color_font,
             background=color,
             font=font_family,
@@ -126,26 +136,26 @@ def control(color, color_end, color_font):
             foreground=color,
             background=color
         ),
-        icon(
-            icon="",
-            foreground=color_font,
-            background=color
-        ),
-        separator(
-            foreground=color,
-            background=color
-        ),
-        widget.Backlight(
-            foreground=color_font,
-            background=color,
-            backlight_name="intel_backlight",
-            font=font_family,
-            fontsize=font_size
-        ),
-        separator(
-            foreground=color,
-            background=color
-        ),
+        # icon(
+        #     icon="",
+        #     foreground=color_font,
+        #     background=color
+        # ),
+        # separator(
+        #     foreground=color,
+        #     background=color
+        # ),
+        # widget.Backlight(
+        #     foreground=color_font,
+        #     background=color,
+        #     backlight_name="intel_backlight",
+        #     font=font_family,
+        #     fontsize=font_size
+        # ),
+        # separator(
+        #     foreground=color,
+        #     background=color
+        # ),
         # icon(
         #     icon="",
         #     foreground=color_font,
@@ -177,7 +187,7 @@ def usage(color, color_end, color_font):
             foreground=color,
             background=color_end
         ),
-        widget.CPU(
+        CPU(
             foreground=color_font,
             background=color,
             font=font_family,
@@ -189,7 +199,7 @@ def usage(color, color_end, color_font):
             foreground=color,
             background=color
         ),
-        widget.Memory(
+        Memory(
             foreground=color_font,
             background=color,
             font=font_family,
@@ -219,7 +229,7 @@ def update(color, color_end, color_font):
             foreground=color,
             background=color
         ),
-        widget.CheckUpdates(
+        CheckUpdates(
             foreground=color_font,
             background=color,
             font=font_family,
@@ -244,14 +254,14 @@ def layout(color, color_end, color_font):
             foreground=color,
             background=color_end
         ),
-        widget.CurrentLayoutIcon(
+        CurrentLayoutIcon(
             foreground=color_font,
             background=color,
             scale=0.5,
             font=font_family,
             fontsize=icon_size
         ),
-        widget.CurrentLayout(
+        CurrentLayout(
             foreground=color_font,
             background=color,
             font=font_family,
@@ -280,7 +290,7 @@ def clock(color, color_end, color_font):
             foreground=color,
             background=color
         ),
-        widget.Clock(
+        Clock(
             foreground=color_font,
             background=color,
             font=font_family,
