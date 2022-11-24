@@ -1,7 +1,5 @@
-~/.screenlayout/default.sh
 setxkbmap latam &
 nm-applet &
 udiskie -t &
-optimus-manager-qt &
 psensor &
 picom &
