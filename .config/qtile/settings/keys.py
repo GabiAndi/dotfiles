@@ -5,7 +5,6 @@ from .config import mod, terminal, web_browser, file_explorer
 
 
 keys = [Key(key[0], key[1], *key[2:]) for key in [
-    ##################### Acciones de ventana #####################
     # Mover el foco de la ventana en un grupo
     ([mod], "h", lazy.layout.left()),
     ([mod], "l", lazy.layout.right()),
@@ -38,9 +37,7 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([mod, "shift"], "q", lazy.spawn("poweroff")),
 
     ([mod], "r", lazy.spawncmd()),
-    ###############################################################
 
-    ########################## Acciones ###########################
     # Volumen
     ([], "XF86AudioLowerVolume", lazy.spawn("pamixer --decrease 5")),
     ([], "XF86AudioRaiseVolume", lazy.spawn("pamixer --increase 5")),
@@ -59,9 +56,7 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     # Screenshot
     ([mod], "s", lazy.spawn("scrot")),
     ([mod, "shift"], "s", lazy.spawn("scrot -s")),
-    ###############################################################
 
-    ######################## Aplicaciones #########################
     # Menu
     ([mod], "m", lazy.spawn("rofi -show drun")),
     ([mod, "shift"], "m", lazy.spawn("rofi -show window")),
@@ -70,5 +65,4 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([mod], "Return", lazy.spawn(terminal)),
     ([mod], "e", lazy.spawn(file_explorer)),
     ([mod], "g", lazy.spawn(web_browser)),
-    ###############################################################
 ]]
