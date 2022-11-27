@@ -35,6 +35,6 @@
             "env": {}
         }
     ],
-    // YAML
+    // RedHat
     "redhat.telemetry.enabled": false,
 }
