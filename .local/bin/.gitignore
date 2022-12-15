@@ -3,5 +3,5 @@
 !.gitignore
 
 # Excepto los archivos de este repositorio
-!backup.sh
-!sync.sh
+!gabi-backup.sh
+!gabi-sync.sh
