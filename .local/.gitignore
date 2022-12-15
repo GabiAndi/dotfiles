@@ -1,0 +1,6 @@
+# Ignorar todo
+/*
+!.gitignore
+
+# Excepto los archivos de este repositorio
+!bin
