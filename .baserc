@@ -9,8 +9,8 @@ if [ -d "/opt/flutter/bin" ]; then
     export PATH="/opt/flutter/bin:$PATH"
 fi
 
-CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
-ANDROID_SDK_ROOT=/opt/android-sdk
+export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
+export ANDROID_SDK_ROOT=/opt/android-sdk
 ##########################################################################
 
 ################################## Alias #################################
