@@ -54,5 +54,8 @@
 		"editor.suggestSelection": "first",
 		"editor.tabCompletion": "onlySnippets",
 		"editor.wordBasedSuggestions": false,
-	}
+    },
+    "dart.env": {
+        "CHROME_EXECUTABLE": "/usr/bin/google-chrome-stable"
+    }
 }
