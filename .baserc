@@ -1,7 +1,16 @@
 ############################ Carpetas al PATH ############################
+# Local
 if [ -d "$HOME/.local/bin" ]; then
     export PATH="$HOME/.local/bin:$PATH"
 fi
+
+# Flutter
+if [ -d "/opt/flutter/bin" ]; then
+    export PATH="/opt/flutter/bin:$PATH"
+fi
+
+CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
+ANDROID_SDK_ROOT=/opt/android-sdk
 ##########################################################################
 
 ################################## Alias #################################
