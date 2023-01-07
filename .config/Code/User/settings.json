@@ -13,6 +13,8 @@
     "terminal.integrated.fontFamily": "MesloLGS NF",
     "terminal.integrated.fontSize": 16,
     "terminal.integrated.gpuAcceleration": "on",
+    "debug.openDebug": "openOnDebugBreak",
+    "debug.internalConsoleOptions": "openOnSessionStart",
     // Spell
     "cSpell.language": "en,es",
     "cSpell.enableFiletypes": [
@@ -37,14 +39,15 @@
     ],
     // RedHat
     "redhat.telemetry.enabled": false,
+    // XML
+    "[xml]": {
+        "editor.defaultFormatter": "redhat.vscode-xml"
+    },
     // CMake
     "cmake.configureOnOpen": false,
     // C++
     "C_Cpp.clang_format_style": "{ BasedOnStyle: LLVM, IndentWidth: 4, TabWidth: 4, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false, ColumnLimit: 0, AccessModifierOffset: -4, NamespaceIndentation: All, FixNamespaceComments: false }",
     // Flutter
-    "dart.flutterSdkPath": "/opt/flutter",
-    "debug.openDebug": "openOnDebugBreak",
-    "debug.internalConsoleOptions": "openOnSessionStart",
     "[dart]": {
 		"editor.formatOnSave": true,
 		"editor.formatOnType": true,
@@ -58,7 +61,5 @@
     "dart.env": {
         "CHROME_EXECUTABLE": "/usr/bin/google-chrome-stable"
     },
-    "[xml]": {
-        "editor.defaultFormatter": "redhat.vscode-xml"
-    }
+    "dart.flutterSdkPath": "/opt/flutter"
 }
