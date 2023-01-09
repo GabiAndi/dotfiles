@@ -13,6 +13,7 @@
     "terminal.integrated.fontFamily": "MesloLGS NF",
     "terminal.integrated.fontSize": 16,
     "terminal.integrated.gpuAcceleration": "on",
+    "terminal.integrated.defaultProfile.linux": "zsh",
     "debug.openDebug": "openOnDebugBreak",
     "debug.internalConsoleOptions": "openOnSessionStart",
     // Spell
@@ -49,14 +50,16 @@
     "C_Cpp.clang_format_style": "{ BasedOnStyle: LLVM, IndentWidth: 4, TabWidth: 4, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false, ColumnLimit: 0, AccessModifierOffset: -4, NamespaceIndentation: All, FixNamespaceComments: false }",
     // Flutter
     "[dart]": {
-		"editor.formatOnSave": true,
-		"editor.formatOnType": true,
-		"editor.rulers": [80],
-		"editor.selectionHighlight": false,
-		"editor.suggest.snippetsPreventQuickSuggestions": false,
-		"editor.suggestSelection": "first",
-		"editor.tabCompletion": "onlySnippets",
-		"editor.wordBasedSuggestions": false,
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false,
     },
     "dart.env": {
         "CHROME_EXECUTABLE": "/usr/bin/google-chrome-stable"
