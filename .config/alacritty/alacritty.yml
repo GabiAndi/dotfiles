@@ -61,6 +61,11 @@ schemes:
 
 colors: *TomorrowNight
 
+shell:
+  program: /bin/zsh
+  args:
+    - --login
+
 key_bindings:
   - { key: F11,       mods: None,          action: ToggleFullscreen            }
   - { key: PageUp,    mods: None,          action: ScrollPageUp,   mode: ~Alt  }
