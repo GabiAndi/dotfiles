@@ -14,5 +14,6 @@
 !.zshrc
 !.p10k.zsh
 !.gitconfig
+!.gitcommit
 !.tmux.conf
 !.xprofile

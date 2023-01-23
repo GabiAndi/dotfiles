@@ -2,7 +2,7 @@
     name = Gabriel Andrés Aguirre
     email = gabiandiagui@gmail.com
 [commit]
-  template = ~/.gitcommit
+    template = ~/.gitcommit
 [color]
     diff = auto
     status = auto
