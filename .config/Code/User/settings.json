@@ -64,5 +64,8 @@
     "dart.env": {
         "CHROME_EXECUTABLE": "/usr/bin/google-chrome-stable"
     },
-    "dart.flutterSdkPath": "/opt/flutter"
+    "dart.flutterSdkPath": "/opt/flutter",
+    "[vue]": {
+        "editor.defaultFormatter": "Vue.volar"
+    }
 }
