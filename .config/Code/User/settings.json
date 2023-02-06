@@ -16,11 +16,6 @@
     "terminal.integrated.defaultProfile.linux": "zsh",
     "debug.openDebug": "openOnDebugBreak",
     "debug.internalConsoleOptions": "openOnSessionStart",
-    // Spell
-    "cSpell.language": "en,es",
-    "cSpell.enableFiletypes": [
-        "shellscript"
-    ],
     // Latex
     "latex-workshop.latex.tools": [
         {
