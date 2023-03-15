@@ -330,14 +330,14 @@ primary_widgets = [
         color_end=theme["color4"],
         color_font=theme["text"]
     ),
-    *layout(
-        color=theme["color2"],
-        color_end=theme["color3"],
-        color_font=theme["text"]
-    ),
+    # *layout(
+    #     color=theme["color2"],
+    #     color_end=theme["color3"],
+    #     color_font=theme["text"]
+    # ),
     *clock(
         color=theme["color1"],
-        color_end=theme["color2"],
+        color_end=theme["color3"],
         color_font=theme["text"]
     )
 ]
@@ -347,11 +347,11 @@ secondary_widgets = [
         foreground=theme["text"],
         background=theme["dark"]
     ),
-    *layout(
-        color=theme["color2"],
-        color_end=theme["dark"],
-        color_font=theme["text"]
-    ),
+    # *layout(
+    #     color=theme["color2"],
+    #     color_end=theme["dark"],
+    #     color_font=theme["text"]
+    # ),
     *clock(
         color=theme["color1"],
         color_end=theme["color2"],
