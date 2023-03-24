@@ -1,9 +1,7 @@
 import subprocess
-
 from libqtile import bar
 from libqtile.config import Screen
 from libqtile.log_utils import logger
-
 from .widgets import primary_widgets, secondary_widgets
 from .config import (status_bar_size, status_bar_opacity,
                      primary_wallpaper_file, primary_wallpaper_mode,
@@ -36,12 +34,13 @@ command = subprocess.run(
     shell=True,
     stdout=subprocess.PIPE,
     stderr=subprocess.PIPE,
+    check=False,
 )
 
 if command.returncode != 0:
     error = command.stderr.decode("utf-8")
     connected_monitors = 1
-    logger.error(f"Error en el comando {xrandr}: {error}")
+    logger.error("Error en el comando %s: %s", xrandr, error)
 else:
     connected_monitors = int(command.stdout.decode("utf-8"))
 

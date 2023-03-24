@@ -1,6 +1,5 @@
 from libqtile.config import Key, Group
 from libqtile.command import lazy
-
 from .keys import mod, keys
 
 

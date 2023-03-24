@@ -1,10 +1,10 @@
-# Configuraciones
-from settings.groups import groups
-from settings.keys import keys
-from settings.layouts import layouts
-from settings.mouse import mouse
-from settings.screens import screens
-from settings.widgets import widget_defaults, extension_defaults
+"""Configuraciones"""
+from settings.groups import groups  # noqa: F401
+from settings.keys import keys  # noqa: F401
+from settings.layouts import layouts  # noqa: F401
+from settings.mouse import mouse  # noqa: F401
+from settings.screens import screens  # noqa: F401
+from settings.widgets import widget_defaults, extension_defaults  # noqa: F401
 
 
 # Variables extra
