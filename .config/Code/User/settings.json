@@ -64,4 +64,6 @@
     "[python]": {
         "editor.formatOnType": true
     },
+    // Git
+    "git.openRepositoryInParentFolders": "never",
 }
