@@ -1,3 +1,5 @@
+"""Configuración de qtile."""
+
 from .theme import theme_red
 
 

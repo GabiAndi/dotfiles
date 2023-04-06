@@ -1,3 +1,5 @@
+"""Atajos de teclado."""
+
 from libqtile.config import Key
 from libqtile.lazy import lazy
 from .config import mod, terminal, web_browser, file_explorer

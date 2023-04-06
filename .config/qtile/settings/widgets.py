@@ -1,3 +1,5 @@
+"""Widgets."""
+
 from libqtile.widget.sep import Sep
 from libqtile.widget.textbox import TextBox
 from libqtile.widget.groupbox import GroupBox
@@ -16,6 +18,7 @@ from .config import font_family, font_size, icon_size, theme
 
 
 def separator(foreground, background, padding=6):
+    """Separador."""
     return Sep(
         foreground=foreground,
         background=background,
@@ -24,7 +27,8 @@ def separator(foreground, background, padding=6):
     )
 
 
-def icon(icon, foreground, background, icon_size=icon_size, padding=4):
+def icon(icon: str, foreground: str, background: str, icon_size=icon_size, padding=4):
+    """Icono."""
     return TextBox(
         foreground=foreground,
         background=background,
@@ -35,7 +39,8 @@ def icon(icon, foreground, background, icon_size=icon_size, padding=4):
     )
 
 
-def powerline(foreground, background, icon=""):
+def powerline(foreground: str, background: str, icon=""):
+    """Powerline."""
     return TextBox(
         foreground=foreground,
         background=background,
@@ -47,6 +52,7 @@ def powerline(foreground, background, icon=""):
 
 
 def workspaces(foreground, background):
+    """Definición de espacios de trabajo."""
     return [
         separator(
             foreground=foreground,
@@ -93,6 +99,7 @@ def workspaces(foreground, background):
 
 
 def systray(foreground, background):
+    """Bandeja del sistema."""
     return [
         separator(
             foreground=foreground,
@@ -114,6 +121,7 @@ def systray(foreground, background):
 
 
 def control(color, color_end, color_font):
+    """Control de audio, brillo, bateria, etc."""
     return [
         powerline(
             foreground=color,
@@ -184,6 +192,7 @@ def control(color, color_end, color_font):
 
 
 def usage(color, color_end, color_font):
+    """Uso de memoria y procesador."""
     return [
         powerline(
             foreground=color,
@@ -217,6 +226,7 @@ def usage(color, color_end, color_font):
 
 
 def update(color, color_end, color_font):
+    """Actualizaciónes disponibles."""
     return [
         powerline(
             foreground=color,
@@ -251,6 +261,7 @@ def update(color, color_end, color_font):
 
 
 def layout(color, color_end, color_font):
+    """Modo de layout actual."""
     return [
         powerline(
             foreground=color,
@@ -278,6 +289,7 @@ def layout(color, color_end, color_font):
 
 
 def clock(color, color_end, color_font):
+    """Reloj del sistema."""
     return [
         powerline(
             foreground=color,
@@ -325,11 +337,11 @@ primary_widgets = [
         color_end=theme["color5"],
         color_font=theme["text"]
     ),
-    *update(
-        color=theme["color3"],
-        color_end=theme["color4"],
-        color_font=theme["text"]
-    ),
+    # *update(
+    #     color=theme["color3"],
+    #     color_end=theme["color4"],
+    #     color_font=theme["text"]
+    # ),
     # *layout(
     #     color=theme["color2"],
     #     color_end=theme["color3"],
@@ -337,7 +349,7 @@ primary_widgets = [
     # ),
     *clock(
         color=theme["color1"],
-        color_end=theme["color3"],
+        color_end=theme["color4"],
         color_font=theme["text"]
     )
 ]

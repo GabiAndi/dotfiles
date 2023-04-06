@@ -1,3 +1,5 @@
+"""Layouts."""
+
 from libqtile import layout
 from libqtile.config import Match
 from .config import theme

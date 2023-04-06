@@ -1,10 +1,12 @@
+"""Pestañas."""
+
 from libqtile.config import Key, Group
 from libqtile.command import lazy
 from .keys import mod, keys
 
 
 groups = [Group(group) for group in [
-    "  ", "  ", "  ", "  ", "  ", "  ", "  ", "  ", "  ",
+    "  ", "  ", "  ", "  ", "  ", "  ", "  ", "  ", "  "
 ]]
 
 for i in range(len(groups)):
