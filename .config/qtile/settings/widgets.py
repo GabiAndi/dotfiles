@@ -27,24 +27,24 @@ def separator(foreground, background, padding=6):
     )
 
 
-def icon(icon: str, foreground: str, background: str, icon_size=icon_size, padding=4):
+def icon(text_icon: str, foreground: str, background: str, size=icon_size, padding=4):
     """Icono."""
     return TextBox(
         foreground=foreground,
         background=background,
         font=font_family,
-        fontsize=icon_size,
-        text=icon,
+        fontsize=size,
+        text=text_icon,
         padding=padding
     )
 
 
-def powerline(foreground: str, background: str, icon=""):
+def powerline(foreground: str, background: str, powerline_icon=""):
     """Powerline."""
     return TextBox(
         foreground=foreground,
         background=background,
-        text=icon,
+        text=powerline_icon,
         font=font_family,
         fontsize=38,
         padding=-2,
@@ -61,13 +61,13 @@ def workspaces(foreground, background):
         GroupBox(
             foreground=foreground,
             background=background,
-            active=theme["active"],
-            inactive=theme["inactive"],
-            urgent_border=theme["urgent"],
-            this_current_screen_border=theme["focus"],
-            this_screen_border=theme["grey"],
-            other_current_screen_border=theme["dark"],
-            other_screen_border=theme["dark"],
+            active=theme['active'],
+            inactive=theme['inactive'],
+            urgent_border=theme['urgent'],
+            this_current_screen_border=theme['focus'],
+            this_screen_border=theme['grey'],
+            other_current_screen_border=theme['dark'],
+            other_screen_border=theme['dark'],
             font=font_family,
             fontsize=icon_size,
             margin_y=3,
@@ -76,8 +76,8 @@ def workspaces(foreground, background):
             padding_x=5,
             borderwidth=1,
             rounded=False,
-            highlight_method="block",
-            urgent_alert_method="block",
+            highlight_method='block',
+            urgent_alert_method='block',
             disable_drag=True
         ),
         separator(
@@ -85,7 +85,7 @@ def workspaces(foreground, background):
             background=background
         ),
         WindowName(
-            foreground=theme["focus"],
+            foreground=theme['focus'],
             background=background,
             font=font_family,
             fontsize=font_size,
@@ -128,7 +128,7 @@ def control(color, color_end, color_font):
             background=color_end
         ),
         icon(
-            icon="",
+            text_icon='',
             foreground=color_font,
             background=color
         ),
@@ -147,7 +147,7 @@ def control(color, color_end, color_font):
             background=color
         ),
         # icon(
-        #     icon="",
+        #     text_icon='',
         #     foreground=color_font,
         #     background=color
         # ),
@@ -158,7 +158,7 @@ def control(color, color_end, color_font):
         # Backlight(
         #     foreground=color_font,
         #     background=color,
-        #     backlight_name="intel_backlight",
+        #     backlight_name='intel_backlight',
         #     font=font_family,
         #     fontsize=font_size
         # ),
@@ -167,7 +167,7 @@ def control(color, color_end, color_font):
         #     background=color
         # ),
         # icon(
-        #     icon="",
+        #     text_icon='',
         #     foreground=color_font,
         #     background=color
         # ),
@@ -178,10 +178,10 @@ def control(color, color_end, color_font):
         # Battery(
         #     foreground=color_font,
         #     background=color,
-        #     low_foreground=theme["focus"],
+        #     low_foreground=theme['focus'],
         #     font=font_family,
         #     fontsize=font_size,
-        #     format="{char} {percent:2.0%}",
+        #     format='{char} {percent:2.0%}',
         #     notify_below=True
         # ),
         # separator(
@@ -203,7 +203,7 @@ def usage(color, color_end, color_font):
             background=color,
             font=font_family,
             fontsize=font_size,
-            format="CPU: {load_percent}%",
+            format='CPU: {load_percent}%',
             update_interval=3.0
         ),
         separator(
@@ -215,7 +215,7 @@ def usage(color, color_end, color_font):
             background=color,
             font=font_family,
             fontsize=font_size,
-            format="MEM: {MemUsed:.0f}{mm}/{MemTotal:.0f}{mm}",
+            format='RAM: {MemUsed:.0f}{mm}/{MemTotal:.0f}{mm}',
             update_interval=3.0
         ),
         separator(
@@ -233,7 +233,7 @@ def update(color, color_end, color_font):
             background=color_end
         ),
         icon(
-            icon="",
+            text_icon='',
             foreground=color_font,
             background=color
         ),
@@ -246,12 +246,12 @@ def update(color, color_end, color_font):
             background=color,
             font=font_family,
             fontsize=font_size,
-            colour_have_updates=theme["text"],
-            colour_no_updates=theme["text"],
-            no_update_string="0",
-            display_format="{updates}",
+            colour_have_updates=theme['text'],
+            colour_no_updates=theme['text'],
+            no_update_string='0',
+            display_format='{updates}',
             update_interval=1800,
-            custom_command="checkupdates",
+            custom_command='checkupdates',
         ),
         separator(
             foreground=color,
@@ -296,7 +296,7 @@ def clock(color, color_end, color_font):
             background=color_end
         ),
         icon(
-            icon="",
+            text_icon='',
             foreground=color_font,
             background=color
         ),
@@ -309,7 +309,7 @@ def clock(color, color_end, color_font):
             background=color,
             font=font_family,
             fontsize=font_size,
-            format="%d/%m/%Y - %H:%M:%S"
+            format='%d/%m/%Y - %H:%M:%S'
         ),
         separator(
             foreground=color,
@@ -320,61 +320,61 @@ def clock(color, color_end, color_font):
 
 primary_widgets = [
     *workspaces(
-        foreground=theme["text"],
-        background=theme["dark"]
+        foreground=theme['text'],
+        background=theme['dark']
     ),
     *systray(
-        foreground=theme["text"],
-        background=theme["dark"]
+        foreground=theme['text'],
+        background=theme['dark']
     ),
     *control(
-        color=theme["color5"],
-        color_end=theme["dark"],
-        color_font=theme["text"]
+        color=theme['color5'],
+        color_end=theme['dark'],
+        color_font=theme['text']
     ),
     *usage(
-        color=theme["color4"],
-        color_end=theme["color5"],
-        color_font=theme["text"]
+        color=theme['color4'],
+        color_end=theme['color5'],
+        color_font=theme['text']
     ),
     # *update(
-    #     color=theme["color3"],
-    #     color_end=theme["color4"],
-    #     color_font=theme["text"]
+    #     color=theme['color3'],
+    #     color_end=theme['color4'],
+    #     color_font=theme['text']
     # ),
     # *layout(
-    #     color=theme["color2"],
-    #     color_end=theme["color3"],
-    #     color_font=theme["text"]
+    #     color=theme['color2'],
+    #     color_end=theme['color3'],
+    #     color_font=theme['text']
     # ),
     *clock(
-        color=theme["color1"],
-        color_end=theme["color4"],
-        color_font=theme["text"]
+        color=theme['color1'],
+        color_end=theme['color4'],
+        color_font=theme['text']
     )
 ]
 
 secondary_widgets = [
     *workspaces(
-        foreground=theme["text"],
-        background=theme["dark"]
+        foreground=theme['text'],
+        background=theme['dark']
     ),
     # *layout(
-    #     color=theme["color2"],
-    #     color_end=theme["dark"],
-    #     color_font=theme["text"]
+    #     color=theme['color2'],
+    #     color_end=theme['dark'],
+    #     color_font=theme['text']
     # ),
     *clock(
-        color=theme["color1"],
-        color_end=theme["color2"],
-        color_font=theme["text"]
+        color=theme['color1'],
+        color_end=theme['color2'],
+        color_font=theme['text']
     )
 ]
 
 widget_defaults = {
-    "font": font_family,
-    "fontsize": font_size,
-    "padding": 4,
+    'font': font_family,
+    'fontsize': font_size,
+    'padding': 4,
 }
 
 extension_defaults = widget_defaults.copy()

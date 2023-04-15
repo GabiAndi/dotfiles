@@ -6,9 +6,9 @@ from .config import theme
 
 
 layout_conf = {
-    "border_focus": theme["focus"],
-    "border_width": 2,
-    "margin": 4,
+    'border_focus': theme['focus'],
+    'border_width': 2,
+    'margin': 4,
 }
 
 layouts = [
@@ -20,12 +20,12 @@ layouts = [
 floating_layout = layout.Floating(
     float_rules=[
         *layout.Floating.default_float_rules,
-        Match(wm_class="confirmreset"),
-        Match(wm_class="makebranch"),
-        Match(wm_class="maketag"),
-        Match(wm_class="ssh-askpass"),
-        Match(title="branchdialog"),
-        Match(title="pinentry"),
+        Match(wm_class='confirmreset'),
+        Match(wm_class='makebranch'),
+        Match(wm_class='maketag'),
+        Match(wm_class='ssh-askpass'),
+        Match(title='branchdialog'),
+        Match(title='pinentry'),
     ],
-    border_focus=theme["focus"]
+    border_focus=theme['focus']
 )

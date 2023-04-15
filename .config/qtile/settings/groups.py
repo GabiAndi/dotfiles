@@ -6,7 +6,7 @@ from .keys import mod, keys
 
 
 groups = [Group(group) for group in [
-    "  ", "  ", "  ", "  ", "  ", "  ", "  ", "  ", "  "
+    '  ', '  ', '  ', '  ', '  ', '  ', '  ', '  ', '  ',
 ]]
 
 for i in range(len(groups)):
@@ -19,7 +19,7 @@ for i in range(len(groups)):
             lazy.group[groups[i].name].toscreen()
         ),
         (
-            [mod, "shift"],
+            [mod, 'shift'],
             actual_key,
             lazy.window.togroup(groups[i].name, switch_group=True)
         ),
