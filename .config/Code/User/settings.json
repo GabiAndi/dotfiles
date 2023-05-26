@@ -60,7 +60,8 @@
     "dart.debugSdkLibraries": true,
     // Python
     "[python]": {
-        "editor.formatOnType": true
+        "editor.formatOnType": true,
+        "editor.defaultFormatter": "ms-python.autopep8"
     },
     // Git
     "git.openRepositoryInParentFolders": "never",
