@@ -366,7 +366,7 @@ secondary_widgets = [
     # ),
     *clock(
         color=theme['color1'],
-        color_end=theme['color2'],
+        color_end=theme['dark'],
         color_font=theme['text']
     )
 ]
