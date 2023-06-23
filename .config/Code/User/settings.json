@@ -16,6 +16,7 @@
     "terminal.integrated.defaultProfile.linux": "zsh",
     "debug.openDebug": "openOnDebugBreak",
     "debug.internalConsoleOptions": "openOnSessionStart",
+    "update.showReleaseNotes": false,
     // Latex
     "latex-workshop.latex.tools": [
         {
