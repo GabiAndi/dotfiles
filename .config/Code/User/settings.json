@@ -66,4 +66,9 @@
     },
     // Git
     "git.openRepositoryInParentFolders": "never",
+    // Hexeditor
+    "hexeditor.columnWidth": 16,
+    "hexeditor.showDecodedText": true,
+    "hexeditor.defaultEndianness": "little",
+    "hexeditor.inspectorType": "aside",
 }
