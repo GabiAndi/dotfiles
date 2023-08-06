@@ -21,6 +21,9 @@ alias ls='exa --group-directories-first'
 alias tree='exa -T'
 alias grep='grep --color=auto'
 
+# Editor de texto
+alias vim='nvim'
+
 # Contraseñas de Flexar
 alias pass-active-flexar='export GNUPGHOME=$HOME/.gnupg/flexar && export PASSWORD_STORE_DIR=$HOME/.password-store/flexar'
 
