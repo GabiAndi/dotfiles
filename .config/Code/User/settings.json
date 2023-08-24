@@ -17,6 +17,9 @@
     "debug.openDebug": "openOnDebugBreak",
     "debug.internalConsoleOptions": "openOnSessionStart",
     "update.showReleaseNotes": false,
+    "editor.rulers": [
+        {"column": 100, "color": "#9f4444"}
+    ],
     // Latex
     "latex-workshop.latex.tools": [
         {
