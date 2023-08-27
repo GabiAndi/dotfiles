@@ -17,6 +17,7 @@
     "debug.openDebug": "openOnDebugBreak",
     "debug.internalConsoleOptions": "openOnSessionStart",
     "update.showReleaseNotes": false,
+    "extensions.ignoreRecommendations": true,
     "editor.rulers": [
         {"column": 100, "color": "#9f4444"}
     ],
