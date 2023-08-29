@@ -1,5 +1,4 @@
 """Layouts."""
-
 from libqtile import layout
 from libqtile.config import Match
 from .config import theme
@@ -7,7 +6,7 @@ from .config import theme
 
 layout_conf = {
     'border_focus': theme['focus'],
-    'border_width': 2,
+    'border_width': 4,
     'margin': 4,
 }
 

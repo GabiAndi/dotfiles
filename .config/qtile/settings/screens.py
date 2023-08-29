@@ -1,23 +1,21 @@
 """Pantallas."""
-
 import subprocess
-from libqtile import bar
+from libqtile.bar import Bar
 from libqtile.config import Screen
 from libqtile.log_utils import logger
 from .widgets import primary_widgets, secondary_widgets
-from .config import (status_bar_size, status_bar_opacity,
-                     primary_wallpaper_file, primary_wallpaper_mode,
-                     secondary_wallpaper_file, secondary_wallpaper_mode)
+from .config import (status_bar_size, status_bar_opacity, primary_wallpaper_file,
+                     primary_wallpaper_mode, secondary_wallpaper_file, secondary_wallpaper_mode)
 from .path import qtile_path
 
 
 def status_bar(widgets):
-    '''Barra de estado.'''
-    return bar.Bar(widgets, status_bar_size, opacity=status_bar_opacity)
+    """Barra de estado."""
+    return Bar(widgets, status_bar_size, opacity=status_bar_opacity)
 
 
 def wallpaper(wallpaper_file, wallpaper_mode):
-    '''Fondo de pantalla.'''
+    """Fondo de pantalla."""
     return {
         'wallpaper': qtile_path + '/' + wallpaper_file,
         'wallpaper_mode': wallpaper_mode
@@ -30,9 +28,7 @@ screens = [
         **wallpaper(primary_wallpaper_file, primary_wallpaper_mode)
     )
 ]
-
 XRAND_COMMAND = 'xrandr | grep -w \'connected\' | cut -d \' \' -f 2 | wc -l'
-
 command = subprocess.run(
     XRAND_COMMAND,
     shell=True,
@@ -40,14 +36,12 @@ command = subprocess.run(
     stderr=subprocess.PIPE,
     check=False,
 )
-
 if command.returncode != 0:
-    error = command.stderr.decode('utf-8')
+    error = command.stderr.decode()
     connected_monitors = 1
-    logger.error('Error en el comando %s: %s', XRAND_COMMAND, error)
+    logger.error(f'Error en el comando {XRAND_COMMAND}: {error}')
 else:
-    connected_monitors = int(command.stdout.decode('utf-8'))
-
+    connected_monitors = int(command.stdout.decode())
 if connected_monitors > 1:
     for _ in range(1, connected_monitors):
         screens.append(Screen(

@@ -1,6 +1,5 @@
 """Temas de colores."""
-
-theme_red = {
+my_theme = {
     'dark': '#292d3e',
     'grey': '#434758',
     'light': '#ffffff',

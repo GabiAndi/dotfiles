@@ -1,5 +1,4 @@
 """Carpeta de configuración de qtile."""
-
 from os import path
 
 
