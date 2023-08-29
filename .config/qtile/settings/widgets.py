@@ -36,17 +36,6 @@ def icon(text_icon: str, foreground: str, background: str, size=icon_size, paddi
     )
 
 
-def powerline(foreground: str, background: str):
-    """Powerline."""
-    return TextBox(
-        foreground=foreground,
-        background=background,
-        font=font_family,
-        fontsize=38,
-        padding=2,
-    )
-
-
 def workspaces(foreground, background):
     """Definición de espacios de trabajo."""
     return [
