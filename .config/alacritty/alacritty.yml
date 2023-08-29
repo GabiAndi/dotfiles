@@ -1,70 +1,54 @@
 env:
-  TERM: xterm-256color
-
-window:
-  dynamic_padding: false
-  opacity: 0.8
-  title: Alacritty
-  class:
-    instance: Alacritty
-    general: Alacritty
-
-font:
-  normal:
-    family: MesloLGS NF
-    style: Regular
-  bold:
-    family: MesloLGS NF
-    style: Bold
-  italic:
-    family: MesloLGS NF
-    style: Italic
-  bold_italic:
-    family: MesloLGS NF
-    style: Bold Italic
-  size: 12.0
-  offset:
-    x: 0
-    y: 1
-
-draw_bold_text_with_bright_colors: true
-
-schemes:
-  TomorrowNight: &TomorrowNight
-    primary:
-      background: '#1d1f21'
-      foreground: '#c5c8c6'
-
-    cursor:
-      text: '#1d1f21'
-      cursor: '#ffffff'
-
-    normal:
-      black:   '#1d1f21'
-      red:     '#cc6666'
-      green:   '#b5bd68'
-      yellow:  '#e6c547'
-      blue:    '#81a2be'
-      magenta: '#b294bb'
-      cyan:    '#70c0ba'
-      white:   '#373b41'
-
-    bright:
-      black:   '#666666'
-      red:     '#ff3334'
-      green:   '#9ec400'
-      yellow:  '#f0c674'
-      blue:    '#81a2be'
-      magenta: '#b77ee0'
-      cyan:    '#54ced6'
-      white:   '#282a2e'
-
-colors: *TomorrowNight
+  TERM: alacritty
 
 shell:
   program: /bin/zsh
-  args:
-    - --login
+  args: ["-l"]
+
+window:
+  padding:
+    x: 10
+    y: 10
+  title: Terminal
+  decorations: none
+
+font:
+  normal:
+    family: JetBrainsMono Nerd Font
+    style: Light
+  bold:
+    family: JetBrainsMono Nerd Font
+    style: SemiBold
+  italic:
+    family: JetBrainsMono Nerd Font
+    style: Light Italic
+  bold_italic:
+    family: JetBrainsMono Nerd Font
+    style: SemiBold Italic
+  size: 14.0
+
+colors:
+  primary:
+    background: "#1F1F1F"
+    foreground: "#E5E5E5"
+  normal:
+    black:   "#161616"
+    red:     "#E84D61"
+    green:   "#8FBB76"
+    yellow:  "#FCC76A"
+    blue:    "#6588D9"
+    magenta: "#8A5F9E"
+    cyan:    "#519FB0"
+    white:   "#E5E5E5"
+  bright:
+    black:   "#161616"
+    red:     "#ED8796"
+    green:   "#A6DA95"
+    yellow:  "#EED49F"
+    blue:    "#8AADF4"
+    magenta: "#C6A0F6"
+    cyan:    "#90C6C4"
+    white:   "#E5E5E5"
 
 key_bindings:
   - { key: F11,       mods: None,          action: ToggleFullscreen            }
