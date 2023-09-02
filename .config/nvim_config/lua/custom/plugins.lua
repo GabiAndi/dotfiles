@@ -51,6 +51,7 @@ local plugins = {
         "python",
         "json",
         "cpp",
+        "c",
       }
     },
   },
