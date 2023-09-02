@@ -128,7 +128,7 @@ def control(color, color_end, color_font):
             background=color,
         ),
         # icon(
-        #     text_icon='',
+        #     text_icon='󰌵',
         #     foreground=color_font,
         #     background=color,
         # ),
@@ -148,7 +148,7 @@ def control(color, color_end, color_font):
         #     background=color,
         # ),
         # icon(
-        #     text_icon='',
+        #     text_icon='󰁹',
         #     foreground=color_font,
         #     background=color,
         # ),
