@@ -165,6 +165,10 @@ def control(color, color_end, color_font):
         #     format='{char} {percent:2.0%}',
         #     notify_below=True,
         # ),
+        # separator(
+        #     foreground=color,
+        #     background=color,
+        # ),
     ]
 
 
