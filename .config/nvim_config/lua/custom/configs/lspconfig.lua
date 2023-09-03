@@ -5,6 +5,8 @@ local capabilities = configs.capabilities
 
 local lspconfig = require("lspconfig")
 
+capabilities.offsetEncoding = { "utf-16" }
+
 lspconfig.pyright.setup({
   on_attach = on_attach,
   capabilities = capabilities,
