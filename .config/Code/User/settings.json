@@ -3,7 +3,6 @@
     "window.zoomLevel": 1.25,
     "editor.fontSize": 16,
     "editor.fontFamily": "JetBrainsMono Nerd Font",
-    "editor.wordWrap": "on",
     "workbench.startupEditor": "none",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "One Dark Pro Darker",
