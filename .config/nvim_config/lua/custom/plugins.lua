@@ -16,7 +16,7 @@ local plugins = {
       dap.listeners.before.event_exited["dapui_config"] = function()
         dapui.close()
       end
-    end
+    end,
   },
   {
     "jay-babu/mason-nvim-dap.nvim",
@@ -26,14 +26,21 @@ local plugins = {
       "mfussenegger/nvim-dap",
     },
     opts = {
-      handlers = {}
+      handlers = {},
     },
   },
   {
     "mfussenegger/nvim-dap",
     config = function(_, _)
       require("core.utils").load_mappings("dap")
-    end
+    end,
+  },
+  {
+    "Civitasv/cmake-tools.nvim",
+    opts = {
+      cmake_build_directory = "build",
+      cmake_generate_options = { "-DCMAKE_EXPORT_COMPILE_COMMANDS=1" },
+    },
   },
   {
     "jose-elias-alvarez/null-ls.nvim",
@@ -52,7 +59,12 @@ local plugins = {
         "json",
         "cpp",
         "c",
-      }
+        "cmake",
+        "xml",
+        "yaml",
+        "bash",
+        "html",
+      },
     },
   },
   {
@@ -73,6 +85,8 @@ local plugins = {
         "clangd",
         "clang-format",
         "codelldb",
+        "cmake-language-server",
+        "cmakelang",
       },
     },
   },
