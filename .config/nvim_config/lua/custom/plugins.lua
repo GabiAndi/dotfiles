@@ -78,9 +78,9 @@ local plugins = {
    "williamboman/mason.nvim",
    opts = {
       ensure_installed = {
-        "black",
-        "mypy",
-        "ruff",
+        "autopep8",
+        "isort",
+        "flake8",
         "pyright",
         "clangd",
         "clang-format",
