@@ -74,4 +74,7 @@
     "hexeditor.showDecodedText": true,
     "hexeditor.defaultEndianness": "little",
     "hexeditor.inspectorType": "aside",
+    // Cortex debug
+    "cortex-debug.openocdPath": "openocd",
+    "cortex-debug.gdbPath": "arm-none-eabi-gdb"
 }
