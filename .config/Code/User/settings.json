@@ -16,7 +16,6 @@
     "debug.openDebug": "openOnDebugBreak",
     "debug.internalConsoleOptions": "openOnSessionStart",
     "update.showReleaseNotes": false,
-    "extensions.ignoreRecommendations": true,
     "editor.rulers": [
         {"column": 100, "color": "#9f4444"}
     ],
@@ -76,5 +75,11 @@
     "hexeditor.inspectorType": "aside",
     // Cortex debug
     "cortex-debug.openocdPath": "openocd",
-    "cortex-debug.gdbPath": "arm-none-eabi-gdb"
+    "cortex-debug.gdbPath": "arm-none-eabi-gdb",
+    "[vue]": {
+        "editor.defaultFormatter": "Vue.volar"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
