@@ -29,13 +29,4 @@ alias pass-active-flexar='export GNUPGHOME=$HOME/.gnupg/flexar && export PASSWOR
 
 # Contraseñas mías
 alias pass-active-gabi='export GNUPGHOME=$HOME/.gnupg/gabi && export PASSWORD_STORE_DIR=$HOME/.password-store/gabi'
-
-# Kubectl
-alias kubectl='minikube kubectl --'
-##########################################################################
-
-################################## PyEnv #################################
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PATH:$PYENV_ROOT/bin"
-eval "$(pyenv init -)"
 ##########################################################################
