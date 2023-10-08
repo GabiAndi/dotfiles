@@ -4,3 +4,4 @@ udiskie -t &
 psensor &
 picom &
 blueman-applet &
+optimus-manager-qt &
