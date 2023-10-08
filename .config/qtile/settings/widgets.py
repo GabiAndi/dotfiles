@@ -4,7 +4,7 @@ from libqtile.widget.textbox import TextBox
 from libqtile.widget.groupbox import GroupBox
 from libqtile.widget.windowname import WindowName
 from libqtile.widget.systray import Systray
-from libqtile.widget.pulse_volume import PulseVolume
+#from libqtile.widget.pulse_volume import PulseVolume
 from libqtile.widget.cpu import CPU
 from libqtile.widget.memory import Memory
 from libqtile.widget.currentlayout import CurrentLayoutIcon, CurrentLayout
@@ -104,29 +104,29 @@ def systray(foreground, background):
 def control(color, color_end, color_font):
     """Control de audio, brillo, bateria, etc."""
     return [
-        separator(
-            foreground=color_end,
-            background=color,
-        ),
-        icon(
-            text_icon='󰕾',
-            foreground=color_font,
-            background=color,
-        ),
-        separator(
-            foreground=color,
-            background=color,
-        ),
-        PulseVolume(
-            foreground=color_font,
-            background=color,
-            font=font_family,
-            fontsize=font_size,
-        ),
-        separator(
-            foreground=color,
-            background=color,
-        ),
+        # separator(
+        #     foreground=color_end,
+        #     background=color,
+        # ),
+        # icon(
+        #     text_icon='󰕾',
+        #     foreground=color_font,
+        #     background=color,
+        # ),
+        # separator(
+        #     foreground=color,
+        #     background=color,
+        # ),
+        # PulseVolume(
+        #     foreground=color_font,
+        #     background=color,
+        #     font=font_family,
+        #     fontsize=font_size,
+        # ),
+        # separator(
+        #     foreground=color,
+        #     background=color,
+        # ),
         # icon(
         #     text_icon='󰌵',
         #     foreground=color_font,
