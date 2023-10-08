@@ -32,10 +32,11 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-qtile start
 setxkbmap latam &
 nm-applet &
 udiskie -t &
 psensor &
 picom &
 blueman-applet &
+
+exec qtile start
