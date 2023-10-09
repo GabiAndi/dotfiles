@@ -1,7 +1,0 @@
-setxkbmap latam &
-nm-applet &
-udiskie -t &
-psensor &
-picom &
-blueman-applet &
-optimus-manager-qt &
