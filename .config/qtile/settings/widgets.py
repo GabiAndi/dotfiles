@@ -4,7 +4,7 @@ from libqtile.widget.textbox import TextBox
 from libqtile.widget.groupbox import GroupBox
 from libqtile.widget.windowname import WindowName
 from libqtile.widget.systray import Systray
-#from libqtile.widget.pulse_volume import PulseVolume
+# from libqtile.widget.pulse_volume import PulseVolume
 from libqtile.widget.cpu import CPU
 from libqtile.widget.memory import Memory
 from libqtile.widget.currentlayout import CurrentLayoutIcon, CurrentLayout
