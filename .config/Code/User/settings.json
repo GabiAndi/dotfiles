@@ -40,6 +40,7 @@
     "redhat.telemetry.enabled": false,
     // CMake
     "cmake.configureOnOpen": false,
+    "cmake.showOptionsMovedNotification": false,
     // C++
     "C_Cpp.clang_format_style": "{ BasedOnStyle: LLVM, IndentWidth: 2, TabWidth: 2, AllowShortIfStatementsOnASingleLine: false, IndentCaseLabels: false, ColumnLimit: 100, AccessModifierOffset: -2, NamespaceIndentation: All, FixNamespaceComments: false, AlignAfterOpenBracket: AlwaysBreak, AlignArrayOfStructures: Right, AlignConsecutiveAssignments: Consecutive, AlignConsecutiveBitFields: Consecutive, AlignConsecutiveDeclarations: Consecutive, AlignConsecutiveMacros: Consecutive }",
     // Flutter
@@ -76,6 +77,7 @@
     // Cortex debug
     "cortex-debug.openocdPath": "openocd",
     "cortex-debug.gdbPath": "arm-none-eabi-gdb",
+    // Web
     "[vue]": {
         "editor.defaultFormatter": "Vue.volar"
     },
