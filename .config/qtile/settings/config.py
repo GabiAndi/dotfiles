@@ -16,7 +16,7 @@ secondary_wallpaper_mode = 'fill'
 status_bar_size = 30
 status_bar_opacity = 1.0
 # Fuentes
-font_family = 'JetBrainsMono Nerd Font'
+font_family = 'JetBrainsMono NF'
 font_size = 18
 icon_size = 22
 # Aplicaciones

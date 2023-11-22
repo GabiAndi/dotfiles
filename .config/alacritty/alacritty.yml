@@ -14,16 +14,16 @@ window:
 
 font:
   normal:
-    family: JetBrainsMono Nerd Font
+    family: JetBrainsMono NF
     style: Light
   bold:
-    family: JetBrainsMono Nerd Font
+    family: JetBrainsMono NF
     style: SemiBold
   italic:
-    family: JetBrainsMono Nerd Font
+    family: JetBrainsMono NF
     style: Light Italic
   bold_italic:
-    family: JetBrainsMono Nerd Font
+    family: JetBrainsMono NF
     style: SemiBold Italic
   size: 14.0
 
