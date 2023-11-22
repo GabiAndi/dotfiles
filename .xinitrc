@@ -36,5 +36,6 @@ udiskie -t &
 psensor &
 picom &
 blueman-applet &
+"$HOME/.screenlayout/desktop.sh" &
 
 qtile start
