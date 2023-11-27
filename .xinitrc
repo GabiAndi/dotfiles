@@ -30,11 +30,21 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
     unset f
 fi
 
+if [[ -f /usr/bin/prime-offload ]]; then
+    prime-offload
+fi
+
+
 setxkbmap latam &
 nm-applet &
 udiskie -t &
 psensor &
 picom &
 blueman-applet &
+optimus-manager-qt &
 
 qtile start
+
+if [[ -f /usr/bin/prime-switch ]]; then
+    prime-switch
+fi
