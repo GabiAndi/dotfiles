@@ -32,7 +32,7 @@ colors:
     background: "#1F1F1F"
     foreground: "#E5E5E5"
   normal:
-    black:   "#161616"
+    black:   "#666666"
     red:     "#E84D61"
     green:   "#8FBB76"
     yellow:  "#FCC76A"
@@ -41,7 +41,7 @@ colors:
     cyan:    "#519FB0"
     white:   "#E5E5E5"
   bright:
-    black:   "#161616"
+    black:   "#666666"
     red:     "#ED8796"
     green:   "#A6DA95"
     yellow:  "#EED49F"
