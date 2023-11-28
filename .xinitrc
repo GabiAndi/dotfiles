@@ -30,7 +30,7 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
     unset f
 fi
 
-if [[ -f /usr/bin/prime-offload ]]; then
+if [ -f /usr/bin/prime-offload ]; then
     prime-offload
 fi
 
@@ -45,6 +45,6 @@ optimus-manager-qt &
 
 qtile start
 
-if [[ -f /usr/bin/prime-switch ]]; then
+if [ -f /usr/bin/prime-switch ]; then
     prime-switch
 fi
