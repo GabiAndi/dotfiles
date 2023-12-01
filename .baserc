@@ -32,7 +32,9 @@ alias pass-active-gabi='export GNUPGHOME=$HOME/.gnupg/gabi && export PASSWORD_ST
 ##########################################################################
 
 ################################## PyEnv #################################
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PATH:$PYENV_ROOT/bin"
-eval "$(pyenv init -)"
+if [ -f "/bin/pyenv" ]; then
+    export PYENV_ROOT="$HOME/.pyenv"
+    command -v pyenv >/dev/null || export PATH="$PATH:$PYENV_ROOT/bin"
+    eval "$(pyenv init -)"
+fi
 ##########################################################################
