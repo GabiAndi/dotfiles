@@ -34,7 +34,6 @@ if [ -f /usr/bin/prime-offload ]; then
     prime-offload
 fi
 
-
 setxkbmap latam &
 nm-applet &
 udiskie -t &
