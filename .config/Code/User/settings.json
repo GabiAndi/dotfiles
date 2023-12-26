@@ -53,7 +53,7 @@
         "editor.suggest.snippetsPreventQuickSuggestions": false,
         "editor.suggestSelection": "first",
         "editor.tabCompletion": "onlySnippets",
-        "editor.wordBasedSuggestions": false,
+        "editor.wordBasedSuggestions": "off",
     },
     "dart.env": {
         "CHROME_EXECUTABLE": "/usr/bin/google-chrome-stable"
