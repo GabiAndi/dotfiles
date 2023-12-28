@@ -9,8 +9,8 @@ from libqtile.widget.cpu import CPU
 from libqtile.widget.memory import Memory
 from libqtile.widget.currentlayout import CurrentLayoutIcon, CurrentLayout
 from libqtile.widget.clock import Clock
-from libqtile.widget.battery import Battery
-from libqtile.widget.backlight import Backlight
+# from libqtile.widget.battery import Battery
+# from libqtile.widget.backlight import Backlight
 from .config import font_family, font_size, icon_size, theme
 
 
@@ -123,52 +123,52 @@ def control(color, color_end, color_font):
         #     font=font_family,
         #     fontsize=font_size,
         # ),
-        separator(
-            foreground=color,
-            background=color,
-        ),
-        icon(
-            text_icon='󰌵',
-            foreground=color_font,
-            background=color,
-        ),
-        separator(
-            foreground=color,
-            background=color,
-        ),
-        Backlight(
-            foreground=color_font,
-            background=color,
-            backlight_name='intel_backlight',
-            font=font_family,
-            fontsize=font_size,
-        ),
-        separator(
-            foreground=color,
-            background=color,
-        ),
-        icon(
-            text_icon='󰁹',
-            foreground=color_font,
-            background=color,
-        ),
-        separator(
-            foreground=color,
-            background=color,
-        ),
-        Battery(
-            foreground=color_font,
-            background=color,
-            low_foreground=theme['focus'],
-            font=font_family,
-            fontsize=font_size,
-            format='{char} {percent:2.0%}',
-            notify_below=True,
-        ),
-        separator(
-            foreground=color,
-            background=color,
-        ),
+        # separator(
+        #     foreground=color,
+        #     background=color,
+        # ),
+        # icon(
+        #     text_icon='󰌵',
+        #     foreground=color_font,
+        #     background=color,
+        # ),
+        # separator(
+        #     foreground=color,
+        #     background=color,
+        # ),
+        # Backlight(
+        #     foreground=color_font,
+        #     background=color,
+        #     backlight_name='intel_backlight',
+        #     font=font_family,
+        #     fontsize=font_size,
+        # ),
+        # separator(
+        #     foreground=color,
+        #     background=color,
+        # ),
+        # icon(
+        #     text_icon='󰁹',
+        #     foreground=color_font,
+        #     background=color,
+        # ),
+        # separator(
+        #     foreground=color,
+        #     background=color,
+        # ),
+        # Battery(
+        #     foreground=color_font,
+        #     background=color,
+        #     low_foreground=theme['focus'],
+        #     font=font_family,
+        #     fontsize=font_size,
+        #     format='{char} {percent:2.0%}',
+        #     notify_below=True,
+        # ),
+        # separator(
+        #     foreground=color,
+        #     background=color,
+        # ),
     ]
 
 
